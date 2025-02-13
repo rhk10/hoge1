@@ -1,0 +1,5 @@
+<% @posts = Post.all %>
+<% @posts.each do |post| %>
+  <h2><%= post.title %></h2>
+  <p>Author: <%= post.author.name %></p>
+<% end %>
